@@ -28,7 +28,7 @@
                         </a>
 
                         <span> • </span>
-                        <a href="{{ route('users.show', [$topic->user_id]) }}" title="{{ $topic->user->name }}">
+                        <a href="{{ $topic->link() }}" title="{{ $topic->user->name }}">
                             <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
                             {{ $topic->user->name }}
                         </a>
